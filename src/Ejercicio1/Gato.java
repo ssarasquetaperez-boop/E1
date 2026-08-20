@@ -16,6 +16,11 @@ public class Gato extends Felino implements Domestico {
     public void vacunar(){
         
     }
+
+    @Override
+    public void saltar() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
 
