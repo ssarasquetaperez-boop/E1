@@ -8,5 +8,8 @@ package Ejercicio1;
  * @author santi
  */
 public class Main {
-    
+    public static void main(String[] args) {
+        System.out.println("hola wacho");
+        System.out.println("");
+    }
 }
