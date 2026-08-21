@@ -21,8 +21,4 @@ public class Perro extends Canino implements Domestico{
          }
          System.out.println("zzzzz " + especie + " dormida");
     }
-    @Override
-    public void mostrarinf() {
-        
-    }
 }

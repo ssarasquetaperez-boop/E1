@@ -28,15 +28,14 @@ public class Main {
         
         ArrayList<Perro> perro = new ArrayList<>();
         
-        
-        for (Animal a : var.values() ){
-            if(a instanceof Perro){
-            perro.add((Perro)a);
+        for (Animal ani : var.values()) {
+            if( ani instanceof Perro) {
+                perro.add((Perro)ani);
+                ani.mostrarinf();
             }
-//            for(Perro p : perro){
-                System.out.println(perro);
-//            }
+            
         }
-
-    }
+        
+        
+    } 
 }
