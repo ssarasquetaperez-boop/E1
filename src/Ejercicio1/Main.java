@@ -38,7 +38,7 @@ public class Main {
         }
         
         Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
-        System.out.println("----Lista de perros ordenados----");
+        System.out.println("\n----Lista de perros ordenados----");
 
         for (Perro raza : perro) {
             raza.mostrarinf();
@@ -80,16 +80,30 @@ public class Main {
                 salvajes.add(anim);
             }
         }
-        System.out.println("----Lista de gato----");
+        System.out.println("\n----Lista de gato----");
         for(Gato g : gato){
             g.mostrarinf();
         }
-        System.out.println("----Liista de animales salvajes----");
+        System.out.println("\n----Liista de animales salvajes----");
         for(Animal a : salvajes){
             a.mostrarinf();
-        }
+        }      
         
-       
+        Perro perro1 = new Perro(i, "Salchicha", "Alimento", "De casa");
+        i++;
+        Perro perro2 = new Perro(i, "Gran Danes", "Alimento", "De casa");
+        i++;
+        humano.adoptarPerro(perro1);
+        
+        System.out.println("\n----Asociacion: Humano - Perro----");
+        System.out.println(humano.getNombre() + " tiene un perro de raza: " + humano.getPerro().getEspecie());
+        humano.adoptarPerro(perro2);
+        System.out.println(humano.getNombre() + " tiene un perro de raza: " + humano.getPerro().getEspecie());
+        
+        
+        System.out.println("\n----Dependencia: Humano - Gato----");
+        Gato gatoHoy = new Gato(i, "Alimento balanceado", "La calle", 0.25, 48);
+        humano.jugarConGato(gatoHoy); 
     }
     
 }
