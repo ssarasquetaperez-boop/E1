@@ -21,23 +21,48 @@ public class Main {
         i++;
         var.putIfAbsent(i, new Perro(i, "Pequine", "Alimento", "De casa"));
         i++;
-        
+
 //        for (Animal a : var.values() ){
 //            a.mostrarinf();
 //        }
-        
         ArrayList<Perro> perro = new ArrayList<>();
-        
+
         for (Animal ani : var.values()) {
-            if( ani instanceof Perro) {
-                perro.add((Perro)ani);
+            if (ani instanceof Perro) {
+                perro.add((Perro) ani);
             }
-            
+
         }
-        Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
-         for (Perro raza : perro) {
-             raza.mostrarinf();
-         }
         
-    } 
+        Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
+        for (Perro raza : perro) {
+            raza.mostrarinf();
+        }
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nIngrese la raza del perro a buscar: ");
+        String razaBuscada = sc.nextLine();
+
+        boolean encontrado = false;
+        Iterator<Perro> it = perro.iterator();
+        while (it.hasNext()) {
+            Perro actual = it.next();
+            if (actual.getEspecie().equalsIgnoreCase(razaBuscada)) {
+                it.remove();
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (encontrado) {
+            System.out.println("Perro de raza '" + razaBuscada + "' encontrado y eliminado.");
+        } else {
+            System.out.println("Perro de raza '" + razaBuscada + "' no se encuentra en la lista.");
+        }
+
+        Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
+        for (Perro raza : perro) {
+            raza.mostrarinf();
+        }
+    }
 }
