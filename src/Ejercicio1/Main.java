@@ -5,6 +5,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
+        Humano humano = new Humano("Jorge", 21, null);
         HashMap<Integer, Animal> var = new HashMap<>();
         int i = 0;
         var.putIfAbsent(i, new Tigre(i, "Carne", "Jungla", 1, 90));
@@ -25,6 +26,8 @@ public class Main {
 //        for (Animal a : var.values() ){
 //            a.mostrarinf();
 //        }
+       
+       
         ArrayList<Perro> perro = new ArrayList<>();
 
         for (Animal ani : var.values()) {
@@ -85,6 +88,8 @@ public class Main {
         for(Animal a : salvajes){
             a.mostrarinf();
         }
+        
+       
     }
     
 }
