@@ -2,8 +2,8 @@ package Ejercicio1;
 
 public class Gato extends Felino implements Domestico {
 
-    public Gato(int id, String especie, String tipo_comida, String habitat) {
-        super(id, especie, tipo_comida, habitat);
+    public Gato(int id, String tipo_comida, String habitat, double altura, double velocidad) {
+        super(id, "Gato", tipo_comida, habitat, altura, velocidad);
     }
     
     @Override
@@ -15,10 +15,13 @@ public class Gato extends Felino implements Domestico {
     public void vacunar(){
         
     }
-
+    
     @Override
-    public void saltar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public double saltar() {
+        pedirVelocidadPorTeclado();
+        double salto = altura + velocidad + 1;
+        System.out.println(especie + " salta " + salto + " metros.");
+        return salto;
     }
 }
 
