@@ -31,11 +31,13 @@ public class Main {
         for (Animal ani : var.values()) {
             if( ani instanceof Perro) {
                 perro.add((Perro)ani);
-                ani.mostrarinf();
             }
             
         }
-        
+        Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
+         for (Perro raza : perro) {
+             raza.mostrarinf();
+         }
         
     } 
 }
