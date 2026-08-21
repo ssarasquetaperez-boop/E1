@@ -26,10 +26,15 @@ public class Humano {
     public void adoptarPerro(Perro p){
         if(this.perro == null){
             this.perro=p;
-            System.out.println(nombre + "adopto perro de raza " + p.getEspecie());
+            System.out.println(nombre + " adopto perro de raza " + p.getEspecie());
         }else {
-            System.out.println(nombre +  "ya tiene un perro");
+            System.out.println(nombre +  " ya tiene un perro");
         }
+    }
+    
+    public void jugarConGato(Gato g) {
+        System.out.println(nombre + " esta jugando con un gato");
+        g.hacerRuido();
     }
     
     
