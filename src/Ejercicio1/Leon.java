@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio1;
 
-/**
- *
- * @author santi
- */
 public class Leon extends Felino {
+
+    public Leon(int id, String especie, String tipo_comida, String habitat) {
+        super(id, especie, tipo_comida, habitat);
+    }
 
     @Override
     public void saltar() {

@@ -1,15 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio1;
 
-/**
- *
- * @author santi
- */
-public abstract class Canino extends Animal {
+public class Canino extends Animal {
+
+    public Canino(int id, String especie, String tipo_comida, String habitat) {
+        super(id, especie, tipo_comida, habitat);
+    }
+    
+    
     public void ladrar(){
     
+    }
+    @Override
+     public void dormir(){
+        System.out.println("zzzzz " + especie + " dormida");
     }
 }
