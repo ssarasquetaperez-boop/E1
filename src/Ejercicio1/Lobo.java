@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ejercicio1;
 
-/**
- *
- * @author santi
- */
 public class Lobo extends Canino {
+    
+    public Lobo(int id, String especie, String tipo_comida, String habitat) {
+        super(id, especie, tipo_comida, habitat);
+    }
+    
+    @Override
+        public void hacerRuido(){
+        int random = (int)(Math.random() * (4 - 10 + 1)) +1 ;
+        System.out.print("A");
+        for(int i = 0; i < random; i++){
+            System.out.print("u");
+        }
+    }
     
 }
