@@ -95,13 +95,13 @@ public class Main {
         i++;
         humano.adoptarPerro(perro1);
         
-        System.out.println("\n----Asociacion: Humano - Perro----");
+        System.out.println("\n----Asociacion: Humano-Perro----");
         System.out.println(humano.getNombre() + " tiene un perro de raza: " + humano.getPerro().getEspecie());
         humano.adoptarPerro(perro2);
         System.out.println(humano.getNombre() + " tiene un perro de raza: " + humano.getPerro().getEspecie());
         
         
-        System.out.println("\n----Dependencia: Humano - Gato----");
+        System.out.println("\n----Dependencia: Humano-Gato----");
         Gato gatoHoy = new Gato(i, "Alimento balanceado", "La calle", 0.25, 48);
         humano.jugarConGato(gatoHoy); 
     }
