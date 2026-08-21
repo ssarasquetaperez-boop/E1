@@ -10,6 +10,7 @@ public class Perro extends Canino implements Domestico{
     
     @Override
     public void vacunar(){
+        System.out.println("se vacuno de moquillo");
         
     }
     @Override
@@ -19,5 +20,9 @@ public class Perro extends Canino implements Domestico{
              System.out.println("da una vuelta...");
          }
          System.out.println("zzzzz " + especie + " dormida");
+    }
+    @Override
+    public void mostrarinf() {
+        
     }
 }

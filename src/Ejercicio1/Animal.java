@@ -59,6 +59,11 @@ public abstract class Animal{
     public void dormir(){
         System.out.println("zzzzz " + especie + " dormida");
     }
-    
+    public void mostrarinf() {
+        System.out.println(id);
+        System.out.println(especie);
+        System.out.println(tipo_comida);
+        System.out.println(habitat);
+    }
     
 }
