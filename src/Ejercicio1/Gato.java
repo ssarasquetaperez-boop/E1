@@ -6,7 +6,10 @@ public class Gato extends Felino implements Domestico {
         super(id, especie, tipo_comida, habitat);
     }
     
-    
+    @Override
+    public void hacerRuido() {
+        System.out.println("Miauu");
+    }
     
     @Override
     public void vacunar(){

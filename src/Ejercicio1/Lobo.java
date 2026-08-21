@@ -7,7 +7,8 @@ public class Lobo extends Canino {
     }
     
     @Override
-        public void hacerRuido(){
+    public void hacerRuido(){
+        System.out.println("Barf Barf!");
         int random = (int)(Math.random() * (4 - 10 + 1)) +1 ;
         System.out.print("A");
         for(int i = 0; i < random; i++){

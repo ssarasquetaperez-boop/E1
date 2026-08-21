@@ -1,7 +1,7 @@
 
 package Ejercicio1;
 
-public class Animal {
+public abstract class Animal{
     
     private int id;
     String especie;
@@ -53,7 +53,7 @@ public class Animal {
     }
     
     public void comer(){
-        
+        System.out.println(especie + " está comiendo " + tipo_comida);
     }
     
     public void dormir(){

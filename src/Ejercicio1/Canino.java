@@ -8,7 +8,7 @@ public class Canino extends Animal {
     
     
     public void ladrar(){
-    
+        System.out.println("Guau, Guau");
     }
     @Override
      public void dormir(){
