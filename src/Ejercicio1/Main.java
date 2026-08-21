@@ -35,6 +35,8 @@ public class Main {
         }
         
         Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
+        System.out.println("----Lista de perros ordenados----");
+
         for (Perro raza : perro) {
             raza.mostrarinf();
         }
@@ -60,9 +62,29 @@ public class Main {
             System.out.println("Perro de raza '" + razaBuscada + "' no se encuentra en la lista.");
         }
 
-        Collections.sort(perro, Comparator.comparing(Perro::getEspecie));
         for (Perro raza : perro) {
             raza.mostrarinf();
         }
+        
+        
+        HashSet<Gato> gato = new HashSet<>();
+        ArrayList<Animal> salvajes = new ArrayList<>();
+        
+        for (Animal anim : var.values()){
+            if( anim instanceof Gato) {
+                gato.add((Gato)anim);
+            }else if (anim instanceof Tigre|| anim instanceof Leon || anim instanceof Lobo){
+                salvajes.add(anim);
+            }
+        }
+        System.out.println("----Lista de gato----");
+        for(Gato g : gato){
+            g.mostrarinf();
+        }
+        System.out.println("----Liista de animales salvajes----");
+        for(Animal a : salvajes){
+            a.mostrarinf();
+        }
     }
+    
 }

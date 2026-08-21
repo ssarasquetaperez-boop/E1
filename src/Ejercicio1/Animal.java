@@ -60,6 +60,7 @@ public abstract class Animal{
         System.out.println("zzzzz " + especie + " dormida");
     }
     public void mostrarinf() {
+        System.out.println("----------------------");
         System.out.println(id);
         System.out.println(especie);
         System.out.println(tipo_comida);
