@@ -1,5 +1,6 @@
 package Ejercicio1;
 
+import java.text.NumberFormat;
 import java.util.*;
 
 public class Main {
@@ -22,6 +23,8 @@ public class Main {
         i++;
         var.putIfAbsent(i, new Perro(i, "Pequine", "Alimento", "De casa"));
         i++;
+//        Perro perroAdopcion = new Perro(i, "pepe", "pepe", "pepe");
+        humano.adoptarPerro(var, 5);
 
 //        for (Animal a : var.values() ){
 //            a.mostrarinf();
@@ -88,6 +91,7 @@ public class Main {
         for(Animal a : salvajes){
             a.mostrarinf();
         }
+        
         
        
     }

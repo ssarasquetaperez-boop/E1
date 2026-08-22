@@ -1,9 +1,18 @@
 package Ejercicio1;
 
 public class Perro extends Canino implements Domestico{
+    
+    public boolean adoptado = false;
 
     public Perro(int id, String especie, String tipo_comida, String habitat) {
         super(id, especie, tipo_comida, habitat);
+    }
+    
+    public boolean estaAdopatdo(){
+        return adoptado;
+    }
+    public void adoptado(boolean adoptado) {
+        this.adoptado = adoptado;
     }
 
     
